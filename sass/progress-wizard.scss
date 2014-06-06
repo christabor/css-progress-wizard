@@ -1,0 +1,126 @@
+// colors
+
+$inactive: #bbb;
+$active: #65d074;
+$hover: #5671d0;
+$step-danger: #d3140f;
+$step-warning: #edb10a;
+$step-info: #5b32d6;
+
+// sizing
+
+$bubble-size: 20px;
+$bubble-line-thickness: 3px;
+$border-thickness: 1px;
+$darken-amount: 30%;
+
+// misc
+$mobile-size: 400px;
+
+@mixin bubble-style($color) {
+    background-color: $color;
+    color: $color;
+    border-color: darken($color, $darken-amount);
+    &:before,
+    &:after {
+        background-color: $color;
+        border-color: darken($color, $darken-amount);
+    }
+}
+.flexer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flexer-element {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+}
+.progress-indicator {
+    @extend .flexer;
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    li {
+        @extend .flexer-element;
+        list-style: none;
+        text-align: center;
+        width: auto;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        text-overflow: ellipsis;
+        color: $inactive;
+        display: block;
+        &:hover {
+            color: darken($inactive, $darken-amount);
+        }
+    }
+    li .bubble {
+        border-radius: 1000px;
+        width: $bubble-size;
+        height: $bubble-size;
+        background-color: $inactive;
+        display: block;
+        margin: 0 auto 0.5em auto;
+        border-bottom: $border-thickness solid darken($inactive, 20%);
+    }
+
+    // line connectors
+
+    li .bubble:before,
+    li .bubble:after {
+        display: block;
+        position: absolute;
+        top: $bubble-size / 2 - $border-thickness;
+        width: 100%;
+        height: $bubble-line-thickness;
+        content: '';
+        background-color: $inactive;
+    }
+    li .bubble:before {
+        left: 0;
+    }
+    li .bubble:after {
+        right: 0;
+    }
+
+    // completed state
+
+    li.completed {
+        color: green;
+        .bubble {
+            @include bubble-style($active);
+        }
+    }
+
+    // button states
+
+    li a:hover .bubble {
+        @include bubble-style($hover);
+    }
+
+    // override states
+
+    li.danger .bubble {
+        @include bubble-style($step-danger);
+    }
+    li.warning .bubble {
+        @include bubble-style($step-warning);
+    }
+    li.info .bubble {
+        @include bubble-style($step-info);
+    }
+}
+
+@media handheld, screen and (max-width: $mobile-size) {
+    .progress-indicator {
+        font-size: 60%;
+    }
+}

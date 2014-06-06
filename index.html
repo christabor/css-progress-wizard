@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1">
+    <title>CSS Progress wizard</title>
+    <!--stylesheets-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/progress-wizard.min.css" rel="stylesheet">
+    <style>
+    body {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .container {
+        width: 70%;
+        margin: 3em auto;
+    }
+    a {
+        color: #406753;
+        text-decoration: none;
+        border-bottom: 1px dotted #999;
+    }
+    a:hover {
+        color: black;
+        border-color: black;
+    }
+    hr {
+        opacity: 0.3;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h3 {
+        border-left: 12px solid #f1f1f1;
+        text-indent: 1em;
+        color: #999;
+        margin-top: 2em;
+        font-weight: 100;
+    }
+    ul {
+        list-style-type: square;
+    }
+    li {
+        line-height: 2.4em;
+    }
+
+    /* A totally custom override */
+
+    .progress-indicator.custom-complex {
+        background-color: #f1f1f1;
+        padding: 10px 5px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+    .progress-indicator.custom-complex li .bubble {
+        height: 12px;
+        width: 99%;
+        border-radius: 2px;
+        box-shadow: inset -5px 0 12px rgba(0, 0, 0, 0.2);
+    }
+    .progress-indicator.custom-complex li .bubble:before,
+    .progress-indicator.custom-complex li .bubble:after {
+        display: none;
+    }
+
+    @media handheld, screen and (max-width: 400px) {
+        body {
+            font-size: 14px;
+        }
+        .container {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A pure css progress indicator!</h1>
+        <p>Features:</p>
+        <ul>
+            <li><strong>Pure CSS</strong> (lightweight, easy to implement)</li>
+            <li><strong>Flexbox</strong> - easy to update and add more items</li>
+            <li><strong>Resizeable/responsive </strong>(text-resize, etc... try it!)</li>
+            <li><strong>Easy to customize design</strong> (sass mixins/variables, etc...)</li>
+            <li><strong>Written with SASS</strong></li>
+        </ul>
+        <hr>
+        <h3>Basic.</h3>
+        <ul class="progress-indicator">
+            <li class="completed">
+                <span class="bubble"></span>
+                Step 1.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                Step 2.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 3.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 4.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 5.
+            </li>
+        </ul>
+        <ul class="progress-indicator">
+            <li class="completed">
+                <span class="bubble"></span>
+                Step 1.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                Step 2.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                Step 3.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                Step 4.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 5.
+            </li>
+        </ul>
+
+        <h3>Moderate</h3>
+        <p>Toss in some <a href="http://fortawesome.github.io/Font-Awesome/"><strong>Font Awesome</strong></a> icons to mix things up.</p>
+        <ul class="progress-indicator">
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 1.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 2.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 3.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 4.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 5.
+            </li>
+        </ul>
+        <ul class="progress-indicator">
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 1.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 2.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 3.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 4.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 5.
+            </li>
+        </ul>
+
+        <h3>Complex</h3>
+        <ul class="progress-indicator custom-complex">
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 1.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 2.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 3.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 4.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 5.
+            </li>
+        </ul>
+        <ul class="progress-indicator custom-complex">
+            <li class="completed">
+                <a href="#">
+                    <span class="bubble"></span>
+                    <i class="fa fa-check-circle"></i>
+                    Step 1 - I'm a link!
+                </a>
+            </li>
+            <li class="completed">
+                <a href="#">
+                    <span class="bubble"></span>
+                    <i class="fa fa-check-circle"></i>
+                    Step 2. - I'm a link!
+                </a>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 3.
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <i class="fa fa-check-circle"></i>
+                Step 4.
+            </li>
+            <li>
+                <span class="bubble"></span>
+                Step 5.
+            </li>
+        </ul>
+        <h3>States</h3>
+        <ul class="progress-indicator">
+            <li class="warning">
+                <span class="bubble"></span><span class="icon-minus"></span>
+                Add some steps
+            </li>
+            <li class="danger">
+                <span class="bubble"></span><span class="icon-exclamation"></span> Add some more...
+            </li>
+
+            <li class="info">
+                <span class="bubble"></span><span class="icon-exclamation"></span> ????
+            </li>
+            <li class="completed">
+                <span class="bubble"></span><span class="icon-time"></span> PROFIT!!
+            </li>
+            <li>
+                <span class="bubble"></span><span class="icon-calendar"></span> Do a barrel roll
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

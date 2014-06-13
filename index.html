@@ -31,7 +31,7 @@
         opacity: 0.3;
     }
     h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
     h3 {
         border-left: 12px solid #f1f1f1;
@@ -41,10 +41,24 @@
         font-weight: 100;
     }
     ul {
+        margin: 0;
+        padding: 0.4em;
         list-style-type: square;
     }
     li {
         line-height: 2.4em;
+    }
+    code {
+        font-family: Monaco, Consolas, "Lucida Console", monospace;
+        background-color: #f1f1f1;
+        font-size: 80%;
+        padding: 4px 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    .subdued {
+        font-size: 80%;
+        opacity: 0.6;
     }
 
     /* A totally custom override */
@@ -66,21 +80,43 @@
         display: none;
     }
 
+    /* Demo for vertical bars */
+
+    .progress-indicator.stacked {
+        width: 48%;
+        display: inline-block;
+    }
+    .progress-indicator.stacked li {
+        height: 150px;
+    }
+    .progress-indicator.stacked li .bubble {
+        padding: 0.1em;
+    }
+    .progress-indicator.stacked li:first-of-type .bubble {
+        padding: 0.5em;
+    }
+    .progress-indicator.stacked li:last-of-type .bubble {
+        padding: 0em;
+    }
+
     @media handheld, screen and (max-width: 400px) {
-        body {
-            font-size: 14px;
-        }
         .container {
             margin: 0;
             width: 100%;
+        }
+        .progress-indicator.stacked {
+            display: block;
+            width: 100%;
+        }
+        .progress-indicator.stacked li {
+            height: 80px;
         }
     }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>A pure css progress indicator!</h1>
-        <p>Features:</p>
+        <h1>A pure css <del class="subdued">progress indicator</del> node/vertex thing!</h1>
         <ul>
             <li><strong>Pure CSS</strong> (lightweight, easy to implement)</li>
             <li><strong>Flexbox</strong> - easy to update and add more items</li>
@@ -246,21 +282,103 @@
         <h3>States</h3>
         <ul class="progress-indicator">
             <li class="warning">
-                <span class="bubble"></span><span class="icon-minus"></span>
+                <span class="bubble"></span><span class="fa fa-minus"></span>
                 Add some steps
             </li>
             <li class="danger">
-                <span class="bubble"></span><span class="icon-exclamation"></span> Add some more...
+                <span class="bubble"></span><span class="fa fa-exclamation"></span> Add some more...
             </li>
 
             <li class="info">
-                <span class="bubble"></span><span class="icon-exclamation"></span> ????
+                <span class="bubble"></span><span class="fa fa-exclamation"></span> ????
             </li>
             <li class="completed">
-                <span class="bubble"></span><span class="icon-time"></span> PROFIT!!
+                <span class="bubble"></span><span class="fa fa-time"></span> PROFIT!!
             </li>
             <li>
-                <span class="bubble"></span><span class="icon-calendar"></span> Do a barrel roll
+                <span class="bubble"></span><span class="fa fa-calendar"></span> Do a barrel roll
+            </li>
+        </ul>
+        <hr>
+        <h2>Other uses!</h2>
+        <p>If you want to stack things up, you can use it for all kinds of things, like timelines. Just add <code>.stacked</code> to the container.</p>
+        <p class="subdued"><strong>Note: </strong> in order to keep text looking good, add the <code>&lt;span class="stacked-text"&gt;Text Label&lt;/span&gt;</code> to all of your text blocks in each node, which can be styled however you like.</p>
+        <ul class="progress-indicator stacked">
+            <li class="completed warning">
+                <a href="#">
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        <span class="fa fa-calendar"></span> June 3rd, 2014
+                        <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
+                    </span>
+                </a>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> May 21st, 2014
+                    <span class="subdued">/ Some stuff happened. It was amazing.</span>
+                </span>
+            </li>
+            <li>
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> April 11th, 2014
+                    <span class="subdued">/ What a wild day!</span>
+                </span>
+            </li>
+            <li>
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> February 3rd, 2014
+                    <span class="subdued">/ This day is toooo long.</span>
+                </span>
+            </li>
+            <li>
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-comment"></span> January 5th, 2014
+                    <span class="subdued">/ Happy birthday, me!</span>
+                </span>
+            </li>
+        </ul>
+        <ul class="progress-indicator stacked">
+            <li class="completed info">
+                <a href="#">
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        <span class="fa fa-calendar"></span> June 3rd, 2014
+                        <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
+                    </span>
+                </a>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> May 21st, 2014
+                    <span class="subdued">/ Some stuff happened. It was amazing.</span>
+                </span>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> April 11th, 2014
+                    <span class="subdued">/ What a wild day!</span>
+                </span>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> February 3rd, 2014
+                    <span class="subdued">/ This day is toooo long.</span>
+                </span>
+            </li>
+            <li>
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-comment"></span> January 5th, 2014
+                    <span class="subdued">/ Happy birthday, me!</span>
+                </span>
             </li>
         </ul>
     </div>

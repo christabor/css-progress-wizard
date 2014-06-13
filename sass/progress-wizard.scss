@@ -34,6 +34,15 @@ $mobile-size: 400px;
     display: -webkit-flex;
     display: flex;
 }
+.no-flexer {
+    display: block;
+}
+.no-flexer-element {
+    -ms-flex: 0;
+    -webkit-flex: 0;
+    -moz-flex: 0;
+    flex: 0;
+}
 .flexer-element {
     -ms-flex: 1;
     -webkit-flex: 1;
@@ -116,6 +125,37 @@ $mobile-size: 400px;
     }
     li.info .bubble {
         @include bubble-style($step-info);
+    }
+
+    // stacked version
+
+    &.stacked {
+        @extend .no-flexer;
+        li {
+            text-indent: -10px;
+            text-align: center;
+            display: block;
+        }
+        li .bubble:before,
+        li .bubble:after {
+            left: 50%;
+            margin-left: -$bubble-line-thickness / 2;
+            width: $bubble-line-thickness;
+            height: 100%;
+        }
+        .stacked-text {
+            position: relative;
+            z-index: 10;
+            top: 0;
+            margin-left: 55% !important;
+            width: 45% !important;
+            display: inline-block;
+            text-align: left;
+            line-height: 1.2em;
+        }
+        li a {
+            border: none;
+        }
     }
 }
 

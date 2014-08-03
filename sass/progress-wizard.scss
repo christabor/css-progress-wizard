@@ -56,7 +56,7 @@ $mobile-size: 400px;
     font-size: 80%;
     text-transform: uppercase;
     margin-bottom: 1em;
-    li {
+    > li {
         @extend .flexer-element;
         list-style: none;
         text-align: center;
@@ -71,7 +71,7 @@ $mobile-size: 400px;
             color: darken($inactive, $darken-amount);
         }
     }
-    li .bubble {
+    > li .bubble {
         border-radius: 1000px;
         width: $bubble-size;
         height: $bubble-size;
@@ -83,8 +83,8 @@ $mobile-size: 400px;
 
     // line connectors
 
-    li .bubble:before,
-    li .bubble:after {
+    > li .bubble:before,
+    > li .bubble:after {
         display: block;
         position: absolute;
         top: $bubble-size / 2 - $border-thickness;
@@ -93,16 +93,16 @@ $mobile-size: 400px;
         content: '';
         background-color: $inactive;
     }
-    li .bubble:before {
+    > li .bubble:before {
         left: 0;
     }
-    li .bubble:after {
+    > li .bubble:after {
         right: 0;
     }
 
     // completed state
 
-    li.completed {
+    > li.completed {
         color: green;
         .bubble {
             @include bubble-style($active);
@@ -111,19 +111,19 @@ $mobile-size: 400px;
 
     // button states
 
-    li a:hover .bubble {
+    > li a:hover .bubble {
         @include bubble-style($hover);
     }
 
     // override states
 
-    li.danger .bubble {
+    > li.danger .bubble {
         @include bubble-style($step-danger);
     }
-    li.warning .bubble {
+    > li.warning .bubble {
         @include bubble-style($step-warning);
     }
-    li.info .bubble {
+    > li.info .bubble {
         @include bubble-style($step-info);
     }
 
@@ -131,13 +131,13 @@ $mobile-size: 400px;
 
     &.stacked {
         @extend .no-flexer;
-        li {
+        > li {
             text-indent: -10px;
             text-align: center;
             display: block;
         }
-        li .bubble:before,
-        li .bubble:after {
+        > li .bubble:before,
+        > li .bubble:after {
             left: 50%;
             margin-left: -$bubble-line-thickness / 2;
             width: $bubble-line-thickness;
@@ -153,7 +153,7 @@ $mobile-size: 400px;
             text-align: left;
             line-height: 1.2em;
         }
-        li a {
+        > li a {
             border: none;
         }
     }

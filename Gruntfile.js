@@ -10,7 +10,8 @@ module.exports = function(grunt) {
         sass: {
             all: {
                 options: {
-                    style: 'compressed'
+                    style: 'compact',
+                    unixNewlines: true
                 },
                 files: {
                     'css/progress-wizard.min.css': 'sass/progress-wizard.scss'

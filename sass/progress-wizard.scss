@@ -2,9 +2,9 @@
 
 // colors
 
-$inactive: #bbb;
-$active: #65d074;
-$current: #337AB7;
+$incomplete: #bbb;
+$complete: #65d074;
+$active: #337AB7;
 $hover: #5671d0;
 $step-danger: #d3140f;
 $step-warning: #edb10a;
@@ -68,20 +68,20 @@ $mobile-size: 400px;
         margin: 0;
         position: relative;
         text-overflow: ellipsis;
-        color: $inactive;
+        color: $incomplete;
         display: block;
         &:hover {
-            color: darken($inactive, $darken-amount);
+            color: darken($incomplete, $darken-amount);
         }
     }
     > li .bubble {
         border-radius: 1000px;
         width: $bubble-size;
         height: $bubble-size;
-        background-color: $inactive;
+        background-color: $incomplete;
         display: block;
         margin: 0 auto 0.5em auto;
-        border-bottom: $border-thickness solid darken($inactive, 20%);
+        border-bottom: $border-thickness solid darken($incomplete, 20%);
     }
 
     // line connectors
@@ -94,7 +94,7 @@ $mobile-size: 400px;
         width: 100%;
         height: $bubble-line-thickness;
         content: '';
-        background-color: $inactive;
+        background-color: $incomplete;
     }
     > li .bubble:before {
         left: 0;
@@ -106,18 +106,18 @@ $mobile-size: 400px;
     // completed state
 
     > li.completed {
-        color: green;
+        color: $complete;
         .bubble {
-            @include bubble-style($active);
+            @include bubble-style($complete);
         }
     }
 
     // current state
 
     > li.active {
-        color: blue;
+        color: $active;
         .bubble {
-            @include bubble-style($current);
+            @include bubble-style($active);
         }
     }
 

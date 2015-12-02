@@ -4,6 +4,7 @@
 
 $inactive: #bbb;
 $active: #65d074;
+$current: #337AB7;
 $hover: #5671d0;
 $step-danger: #d3140f;
 $step-warning: #edb10a;
@@ -108,6 +109,15 @@ $mobile-size: 400px;
         color: green;
         .bubble {
             @include bubble-style($active);
+        }
+    }
+
+    // current state
+
+    > li.active {
+        color: blue;
+        .bubble {
+            @include bubble-style($current);
         }
     }
 

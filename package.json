@@ -2,7 +2,7 @@
   "name": "css-progress-wizard",
   "devDependencies": {
     "grunt": "~0.4.5",
-    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-sass": "~0.4.0",
     "grunt-contrib-watch": "~0.4.4"
   }
 }

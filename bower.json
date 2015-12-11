@@ -1,0 +1,22 @@
+{
+  "name": "css-progress-wizard",
+  "description": "A pure CSS step progress indicator",
+  "main": "css/progress-wizard.min.css",
+  "license": "GPL-3.0",
+  "keywords": [
+    "css",
+    "step",
+    "progress",
+    "form",
+    "wizard",
+    "flexbox"
+  ],
+  "homepage": "https://github.com/christabor/css-progress-wizard",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

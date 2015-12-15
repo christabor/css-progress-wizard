@@ -51,7 +51,7 @@
     code {
         font-family: Monaco, Consolas, "Lucida Console", monospace;
         background-color: #f1f1f1;
-        font-size: 80%;
+        font-size: 70%;
         padding: 4px 8px;
         border-radius: 4px;
         border: 1px solid #ccc;
@@ -169,7 +169,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>A pure css <del class="subdued">progress indicator</del> node/vertex thing!</h1>
+        <h1>
+            (CSS) Progress Wizard <br>
+            <small>A pure css <del class="subdued">progress indicator</del> node/vertex thing!</small>
+        </h1>
         <ul>
             <li><strong>Pure CSS</strong> (lightweight, easy to implement)</li>
             <li><strong>Flexbox</strong> - easy to update and add more items</li>
@@ -177,7 +180,33 @@
             <li><strong>Easy to customize design</strong> (sass mixins/variables, etc...)</li>
             <li><strong>Written with SASS</strong></li>
         </ul>
-        <hr>
+        <h3>Usage.</h3>
+        <p>Just add <code>.progress-indicator</code> to any ul or ol. Add bubbles by embedding a <code>&lt;span class="bubble"&gt;</code> in your <code>&lt;li&gt;</code>. See below for an example:</p>
+        <code>
+            &lt;ul class="progress-indicator"&gt;
+                &lt;li class="completed"&gt;
+                    &lt;span class="bubble"&gt;&lt;/span&gt;
+                    Step 1.
+                &lt;/li&gt;
+                &lt;li class="completed"&gt;
+                    &lt;span class="bubble"&gt;&lt;/span&gt;
+                    Step 2.
+                &lt;/li&gt;
+                &lt;li class="completed"&gt;
+                    &lt;span class="bubble"&gt;&lt;/span&gt;
+                    Step 3.
+                &lt;/li&gt;
+                &lt;li class="completed"&gt;
+                    &lt;span class="bubble"&gt;&lt;/span&gt;
+                    Step 4.
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;span class="bubble"&gt;&lt;/span&gt;
+                    Step 5.
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+        <h2>Examples</h2>
         <h3>Basic.</h3>
         <ul class="progress-indicator">
             <li class="completed">

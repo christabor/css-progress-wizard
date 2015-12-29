@@ -46,6 +46,7 @@
         list-style-type: square;
     }
     li {
+        padding-left: 0.5em;
         line-height: 2.4em;
     }
     code {
@@ -82,21 +83,30 @@
 
     /* Demo for vertical bars */
 
-    .progress-indicator.stacked {
+    .progress-indicator.stepped.stacked {
         width: 48%;
         display: inline-block;
     }
-    .progress-indicator.stacked > li {
+    .progress-indicator.stepped.stacked > li {
         height: 150px;
     }
-    .progress-indicator.stacked > li .bubble {
+    .progress-indicator.stepped.stacked > li .bubble {
         padding: 0.1em;
     }
-    .progress-indicator.stacked > li:first-of-type .bubble {
+    .progress-indicator.stepped.stacked > li:first-of-type .bubble {
         padding: 0.5em;
     }
-    .progress-indicator.stacked > li:last-of-type .bubble {
+    .progress-indicator.stepped.stacked > li:last-of-type .bubble {
         padding: 0em;
+    }
+
+    /* Nocenter */
+
+    .progress-indicator.nocenter.stacked > li {
+        min-height: 100px;
+    }
+    .progress-indicator.nocenter.stacked > li span {
+        display: block;
     }
 
     /* Demo for Timeline vertical bars */
@@ -385,7 +395,7 @@
         <h2>Other uses!</h2>
         <p>If you want to stack things up, you can use it for all kinds of things, like timelines. Just add <code>.stacked</code> to the container.</p>
         <p class="subdued"><strong>Note: </strong> in order to keep text looking good, add the <code>&lt;span class="stacked-text"&gt;Text Label&lt;/span&gt;</code> to all of your text blocks in each node, which can be styled however you like.</p>
-        <ul class="progress-indicator stacked">
+        <ul class="progress-indicator stepped stacked">
             <li class="completed warning">
                 <a href="#">
                     <span class="bubble"></span>
@@ -424,7 +434,7 @@
                 </span>
             </li>
         </ul>
-        <ul class="progress-indicator stacked">
+        <ul class="progress-indicator stepped stacked">
             <li class="completed info">
                 <a href="#">
                     <span class="bubble"></span>
@@ -508,6 +518,34 @@
                 </li>
             </ul>
         </div>
+
+        <h3>No centering in the container</h3>
+        <p>To disable centering and margins that auto-center the timeline, just add <code>.nocenter</code> To the <code>ul/ol</code>. <em>Note: depending on your icons and text, you may want to massage the alignment for your content.</em></p>
+        <ul class="progress-indicator nocenter stacked">
+            <li class="completed info">
+                <a href="#">
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        <span class="fa fa-calendar"></span> June 3rd, 2014
+                        <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
+                    </span>
+                </a>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> May 21st, 2014
+                    <span class="subdued">/ Some stuff happened. It was amazing.</span>
+                </span>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> April 11th, 2014
+                    <span class="subdued">/ What a wild day!</span>
+                </span>
+            </li>
+        </ul>
     </div>
 
 </body>

@@ -169,6 +169,21 @@ $mobile-size: 400px;
             border: none;
         }
     }
+    &.stacked.nocenter {
+        > li .bubble {
+            margin-left: 0;
+            margin-right: 0
+        }
+        > li .bubble:before,
+        > li .bubble:after {
+            left: $bubble-size / 2;
+        }
+        .stacked-text {
+            width: auto;
+            display: block;
+            margin-left: $bubble-size * 2 !important;
+        }
+    }
 }
 
 @media handheld, screen and (max-width: $mobile-size) {

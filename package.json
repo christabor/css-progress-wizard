@@ -6,8 +6,10 @@
   },
   "license": "GPL-3.0",
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-sass": "~0.4.0",
-    "grunt-contrib-watch": "~0.4.4"
+    "gulp": "^3.9.0",
+    "gulp-compress": "0.0.8",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-sass": "^2.1.0"
   }
 }

@@ -179,7 +179,7 @@ $mobile-size: 400px;
             left: $bubble-size / 2;
         }
         .stacked-text {
-            width: auto;
+            width: auto !important;
             display: block;
             margin-left: $bubble-size * 2 !important;
         }

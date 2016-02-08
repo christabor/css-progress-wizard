@@ -2,23 +2,23 @@
 
 // colors
 
-$incomplete: #bbb;
-$complete: #65d074;
-$active: #337AB7;
-$hover: #5671d0;
-$step-danger: #d3140f;
-$step-warning: #edb10a;
-$step-info: #5b32d6;
+$incomplete: #bbb !default;
+$complete: #65d074 !default;
+$active: #337AB7 !default;
+$hover: #5671d0 !default;
+$step-danger: #d3140f !default;
+$step-warning: #edb10a !default;
+$step-info: #5b32d6 !default;
 
 // sizing
 
-$bubble-size: 20px;
-$bubble-line-thickness: 3px;
-$border-thickness: 1px;
-$darken-amount: 30%;
+$bubble-size: 20px !default;
+$bubble-line-thickness: 3px !default;
+$border-thickness: 1px !default;
+$darken-amount: 30% !default;
 
 // misc
-$mobile-size: 400px;
+$mobile-size: 400px !default;
 
 @mixin bubble-style($color) {
     background-color: $color;

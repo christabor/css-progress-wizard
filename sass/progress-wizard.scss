@@ -103,6 +103,19 @@ $mobile-size: 400px !default;
         right: 0;
     }
 
+    > li:first-child .bubble:before,
+    > li:first-child .bubble:after {
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    > li:last-child .bubble:before,
+    > li:last-child .bubble:after {
+        width: 50%;
+        margin-right: 50%;
+    }
+
+
     // completed state
 
     > li.completed {

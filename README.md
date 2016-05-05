@@ -1,4 +1,4 @@
-[![MIT Badge](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/christabor/css-progress-wizard/master/LICENSE)
+[![GPLv3 Badge](http://img.shields.io/badge/license-GPLv3-blue.svg)](https://raw.githubusercontent.com/christabor/css-progress-wizard/master/LICENSE)
 ![Donation badge](https://img.shields.io/gratipay/christabor.svg)
 
 ## A pure css progress indicator!

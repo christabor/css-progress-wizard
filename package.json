@@ -1,5 +1,6 @@
 {
-  "name": "css-progress-wizard",
+  "name": "css_progress_wizard",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/christabor/css-progress-wizard.git"

@@ -16,61 +16,73 @@ GITHUB https://github.com/christabor/css-progress-wizard
 ---
 * Progress Format
 * Bar Format
-*
-*
+* Color
+* Time Line
+* No Center Align
+* Font Awesome Icons
+* Link to Exampple
 
 
-### Progress Format
+### Bar & Progress Format
 ---
-* bubble
-* bar
-```html
-<li class=(...)>
-    <span class="x">    <!-- replace x with one of the classes" -->
-    </span>
-</li>
-```
-   |     format    |              class                |
-   | :-----------:  | :-------------------------------: |
-   |     bubble    |         progress-indicator        |
-   |      bar      | progress-indicator custom-complex |
-
-
-
-### Bar Format
----
-* horizontal
 * vertical
-```html
-<ul class="x">    <!-- replace "x" to one of the classes -->
-    <li> (...) </li>
-</ul>
-```
-   |     format    |    class   |
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/VerticalBarExample.png?raw=true)
+    - Text for vertical bar
+        ```html
+        <ul class="stacked">
+            <li>
+                <span class="stacked-text"> (text)
+                    <span class="subdued"> (subdued text) </span> (...)
+                </span>
+            </li>
+        </ul>
+        ```
+* horizontal
+
+    * bubble
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleExample.png?raw=true "Bubble")
+    * bar
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarExample.png?raw=true "Bar")
+
+* Bar Format:
+    |     format    |    class   |
    | :-----------: | :--------: |
    |  horizontal   | (no class) |
    |   vertical    |   stacked  |
-
-
-
-*  Text for vertical bar
     ```html
-    <ul class="stacked">
-        <li>
-            <span class="stacked-text"> (text) </span> (...)
-        </li>
+    <ul class="x">    <!-- replace "x" to one of the classes -->
+        <li> (...) </li>
     </ul>
     ```
+
+
+* Progress Format:
+    |     format    |              class                |
+   | :-----------:  | :-------------------------------: |
+   |     bubble    |         progress-indicator        |
+   |      bar      | progress-indicator custom-complex |
+    ```html
+    <li class=(...)>
+        <span class="x">    <!-- replace x with one of the classes" -->
+        </span>
+    </li>
+    ```
+
+
 ### Color
 ---
-```html
-<ul class=(...)>  
-    <li class="x">  <!-- replace x with one of the classes" -->
-        (...)
-    </li>
-</ul>
-```
-   |                           progress                        |                    text & icon color                    |        class        |
+
+* Horizontal
+    * Bubble Color:
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleColor.png?raw=true)
+
+    * Bar Color:
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarColor.png?raw=true)
+
+* Vertical Color:
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/VerticalBarColor.png?raw=true)
+
+ |                           progress                        |                    text & icon color                    |        class        |
    | :-------------------------------------------------------- | :-------------------------------------------------------- | :------------------:|
    |  ![](https://placehold.it/15/65d074/000000?text=+)  green |  ![](https://placehold.it/15/65d074/000000?text=+)  green |    `completed `     |
    |  ![](https://placehold.it/15/337AB7/000000?text=+)  blue  |  ![](https://placehold.it/15/337AB7/000000?text=+)  blue  |      `active`       |
@@ -79,8 +91,17 @@ GITHUB https://github.com/christabor/css-progress-wizard
    |  ![](https://placehold.it/15/d3140f/000000?text=+)  red   |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |      `danger`       |
    |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |      no class       |
 
+```html
+<ul class=(...)>  
+    <li class="x">  <!-- replace x with one of the classes" -->
+        (...)
+    </li>
+</ul>
+```
+
 ### Time Line
 ---
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/TimeLine.png?raw=true)
 ```html
 <div id="timeline-speaker-example">
     (...)
@@ -106,7 +127,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
     </div>
     ```    
 
-### No center align
+### No Center Align
 ---
 ```html
 <ul class="nocenter">
@@ -116,6 +137,14 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ### Font Awesome Icons
 ---
+   |     icon     |                                                               image                                                                |
+   | :----------- | :--------------------------------------------------------------------------------------------------------------------------------: |
+   | check-circle | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/check-circle.png "check-circle") |
+   |    minus     | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/minus.png "minus")               |
+   |  exclamation | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/exclamation.png "minus")         |
+   |   calendar   | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/calendar.png "Calendar")         |
+   |    comment   | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/comment.png "comment")           |
+
 ```html
 <ul>
     <li>
@@ -124,13 +153,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 </ul>
 ```
 
-   |     icon     |                                                               image                                                                |
-   | :----------- | :--------------------------------------------------------------------------------------------------------------------------------: |
-   | check-circle | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/check-circle.png "check-circle") |
-   |    minus     | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/minus.png "minus")               |
-   |  exclamation | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/exclamation.png "minus")         |
-   |   calendar   | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/calendar.png "Calendar")         |
-   |    comment   | ![alt text](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/icons/comment.png "comment")           |
-### Link to example
+
+### Link to Example
 ---
 [http://christabor.github.io/css-progress-wizard/](http://christabor.github.io/css-progress-wizard/ "Css Progress Wizard")

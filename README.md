@@ -38,9 +38,9 @@ GITHUB https://github.com/christabor/css-progress-wizard
         </ul>
         ```
 * horizontal
-
     * bubble
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleExample.png?raw=true "Bubble")
+
     * bar
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarExample.png?raw=true "Bar")
 

@@ -25,7 +25,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ### Bar & Progress Format
 ---
-* vertical
+* Vertical
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/VerticalBarExample.png?raw=true)
     - Text for vertical bar
         ```html
@@ -37,11 +37,11 @@ GITHUB https://github.com/christabor/css-progress-wizard
             </li>
         </ul>
         ```
-* horizontal
-    * bubble
+* Horizontal
+    * Bubble:
     ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleExample.png?raw=true "Bubble")
 
-    * bar
+    * Bar:
     ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarExample.png?raw=true "Bar")
 
 * Bar Format:

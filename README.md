@@ -24,16 +24,91 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ### Bar & Progress Format
 ---
-* Vertical Bar:
+##### Vertical Bar:
 
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/VerticalBarExample.png?raw=true)
+
 ```html
-<ul class="progress-indicator stacked">   <!-- vertical bar -->
-    <li>
-        (...)
-    </li>
-</ul>
+        <ul class="progress-indicator stepped stacked">
+            <li class="completed warning">
+                <a href="#">
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        <span class="fa fa-calendar"></span> June 3rd, 2014
+                        <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
+                    </span>
+                </a>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> May 21st, 2014
+                    <span class="subdued">/ Some stuff happened. It was amazing.</span>
+                </span>
+            </li>
+            <li>
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> April 11th, 2014
+                    <span class="subdued">/ What a wild day!</span>
+                </span>
+            </li>
+            <li>
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> February 3rd, 2014
+                    <span class="subdued">/ This day is toooo long.</span>
+                </span>
+            </li>
+            <li>
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-comment"></span> January 5th, 2014
+                    <span class="subdued">/ Happy birthday, me!</span>
+                </span>
+            </li>
+        </ul>
+        <ul class="progress-indicator stepped stacked">
+            <li class="completed info">
+                <a href="#">
+                    <span class="bubble"></span>
+                    <span class="stacked-text">
+                        <span class="fa fa-calendar"></span> June 3rd, 2014
+                        <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
+                    </span>
+                </a>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> May 21st, 2014
+                    <span class="subdued">/ Some stuff happened. It was amazing.</span>
+                </span>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> April 11th, 2014
+                    <span class="subdued">/ What a wild day!</span>
+                </span>
+            </li>
+            <li class="completed">
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-calendar"></span> February 3rd, 2014
+                    <span class="subdued">/ This day is toooo long.</span>
+                </span>
+            </li>
+            <li>
+                <span class="bubble"></span>
+                <span class="stacked-text">
+                    <span class="fa fa-comment"></span> January 5th, 2014
+                    <span class="subdued">/ Happy birthday, me!</span>
+                </span>
+            </li>
+        </ul>
 ```
+
 
 * Vertical Bar Text
     ```html
@@ -74,10 +149,12 @@ GITHUB https://github.com/christabor/css-progress-wizard
     ```
 
 * Bar Format:
-    |     format    |    class   |
+
+   |     format    |    class   |
    | :-----------: | :--------: |
    |  horizontal   | (no class) |
    |   vertical    |   stacked  |
+
     ```html
     <ul class="x">    <!-- replace "x" to one of the classes -->
         <li> (...) </li>
@@ -86,9 +163,9 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 * Progress Format:
     |     format    |              class                |
-   | :-----------:  | :-------------------------------: |
-   |     bubble    |         progress-indicator        |
-   |      bar      | progress-indicator custom-complex |
+    | :-----------: | :-------------------------------: |
+    |     bubble    |         progress-indicator        |
+    |      bar      | progress-indicator custom-complex |
     ```html
     <li class=(...)>
         <span class="x">    <!-- replace x with one of the classes" -->
@@ -104,6 +181,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleColor.png?raw=true "Horizontal Bubble Color Example")
     * Bar:
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarColor.png?raw=true "Horizontal Bar Color Example")
+
     ```html
     <ul class="progress-indicator">   <!-- add "custom-complex for bar -->
         <li class="completed">

@@ -11,7 +11,6 @@ GITHUB https://github.com/christabor/css-progress-wizard
 * Easy to customize design (sass mixins/variables, etc...)
 * Written with SASS
 
-
 ## Introduction
 ---
 * Progress Format
@@ -25,24 +24,54 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ### Bar & Progress Format
 ---
-* Vertical
+* Vertical Bar:
+
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/VerticalBarExample.png?raw=true)
-    - Text for vertical bar
-        ```html
-        <ul class="stacked">
-            <li>
-                <span class="stacked-text"> (text)
-                    <span class="subdued"> (subdued text) </span> (...)
-                </span>
-            </li>
-        </ul>
-        ```
-* Horizontal
+```html
+<ul class="progress-indicator stacked">   <!-- vertical bar -->
+    <li>
+        (...)
+    </li>
+</ul>
+```
+
+* Vertical Bar Text
+    ```html
+        <li>
+            <span class="stacked-text">            
+                <!-- put here text for progress -->     
+                I'm stacked-text 1
+            </span>
+        </li>
+    ```
+* Vertical Bar Subdued Text
+    ```html
+    <li>
+        <span class="stacked-text">
+            (...)
+                <span class="subdued">
+                <!-- put here subdued text for progress -->
+                /I'm a subdued text 1
+            </span>
+        </span>
+    </li>
+    ```
+* Horizontal:
     * Bubble:
     ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleExample.png?raw=true "Bubble")
+    ```html
+    <ul class="progress-indicator">
+        <li> (...) </li>
+    </ul>
+    ```
 
     * Bar:
     ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarExample.png?raw=true "Bar")
+    ```html
+    <ul class="progress-indicator custom-complex">
+        <li> (...) </li>
+    </ul>
+    ```
 
 * Bar Format:
     |     format    |    class   |
@@ -54,7 +83,6 @@ GITHUB https://github.com/christabor/css-progress-wizard
         <li> (...) </li>
     </ul>
     ```
-
 
 * Progress Format:
     |     format    |              class                |
@@ -68,36 +96,84 @@ GITHUB https://github.com/christabor/css-progress-wizard
     </li>
     ```
 
-
 ### Color
 ---
 
-* Horizontal
-    * Bubble Color:
-![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleColor.png?raw=true)
+* Horizontal Bar Color Example:
+    * Bubble:
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleColor.png?raw=true "Horizontal Bubble Color Example")
+    * Bar:
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarColor.png?raw=true "Horizontal Bar Color Example")
+    ```html
+    <ul class="progress-indicator">   <!-- add "custom-complex for bar -->
+        <li class="completed">
+            <span class="bubble"></span> green
+        </li>
+        <li class="active">
+            <span class="bubble"></span> blue
+        </li>
+        <li class="info">
+            <span class="bubble"></span> purple
+        </li>
+        <li class="warning">
+            <span class="bubble"></span> yellow
+        </li>
+        <li class="danger">
+            <span class="bubble"></span> red
+        </li>
+        <li>
+            <span class="bubble"></span> gray
+        </li>
+    </ul>
+    ```
 
-    * Bar Color:
-![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarColor.png?raw=true)
+* Vertical Bar Color Example:
+![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/VerticalBarColor.png?raw=true "Vertical Bar Color Example")
+    ```html
+    <ul class="progress-indicator stepped stacked">
+        <li class="completed">
+            <span class="bubble"></span>
+            <span class="stacked-text">green</span>
+        </li>
+        <li class="active">
+            <span class="bubble"></span>
+            <span class="stacked-text">blue</span>
+        </li>
+        <li class="info">
+            <span class="bubble"></span>
+            <span class="stacked-text">purple</span>
+        </li>
+        <li class="completed">
+            <span class="bubble"></span>
+            <span class="stacked-text">green</span>
+        </li>
+        <li class="active">
+            <span class="bubble"></span>
+            <span class="stacked-text">blue</span>
+        </li>
+        <li class="info">
+            <span class="bubble"></span>
+            <span class="stacked-text">purple</span>
+        </li>
+    </ul>
+    ```
+* Color Classes
+     |                           progress                        |                    text & icon color                    |        class        |
+       | :-------------------------------------------------------- | :-------------------------------------------------------- | :------------------:|
+       |  ![](https://placehold.it/15/65d074/000000?text=+)  green |  ![](https://placehold.it/15/65d074/000000?text=+)  green |    `completed `     |
+       |  ![](https://placehold.it/15/337AB7/000000?text=+)  blue  |  ![](https://placehold.it/15/337AB7/000000?text=+)  blue  |      `active`       |
+       |  ![](https://placehold.it/15/5b32d6/000000?text=+) purple |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |       `info`        |
+       |  ![](https://placehold.it/15/edb10a/000000?text=+) yellow |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |      `warning`      |
+       |  ![](https://placehold.it/15/d3140f/000000?text=+)  red   |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |      `danger`       |
+       |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |      no class       |
 
-* Vertical Color:
-![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/VerticalBarColor.png?raw=true)
-
- |                           progress                        |                    text & icon color                    |        class        |
-   | :-------------------------------------------------------- | :-------------------------------------------------------- | :------------------:|
-   |  ![](https://placehold.it/15/65d074/000000?text=+)  green |  ![](https://placehold.it/15/65d074/000000?text=+)  green |    `completed `     |
-   |  ![](https://placehold.it/15/337AB7/000000?text=+)  blue  |  ![](https://placehold.it/15/337AB7/000000?text=+)  blue  |      `active`       |
-   |  ![](https://placehold.it/15/5b32d6/000000?text=+) purple |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |       `info`        |
-   |  ![](https://placehold.it/15/edb10a/000000?text=+) yellow |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |      `warning`      |
-   |  ![](https://placehold.it/15/d3140f/000000?text=+)  red   |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |      `danger`       |
-   |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |  ![](https://placehold.it/15/bbb/000000?text=+)     gray  |      no class       |
-
-```html
-<ul class=(...)>  
-    <li class="x">  <!-- replace x with one of the classes" -->
-        (...)
-    </li>
-</ul>
-```
+    ```html
+    <ul class=(...)>    <!-- horizontal or vertical bar -->
+        <li class="x">  <!-- replace x with one of the classes" -->
+            (...)
+        </li>
+    </ul>
+    ```
 
 ### Time Line
 ---
@@ -107,28 +183,26 @@ GITHUB https://github.com/christabor/css-progress-wizard
     (...)
 </div>
 ```
-- time
+- time & sub-info
     ```html
     <div> (...)
         <span class="time"> (time) </span>
-        (...)
+        <span class="sub-info">
+            <ul>
+                <li>I'm sub-info</li>
+                <li>Second sub-info</li>
+                <li>Last sub-info</li>
+            </ul>
+            (...)
+        </span>
     </div>
     ```
 
-- sub-info
-    ```html
-    <div> (...)
-        <span class="sub-info">
-            <ul>
-                <li> (sub-info)  </li>
-                <li> (sub-info)  </li>  (...)
-            </ul>
-        </span>
-    </div>
-    ```    
+
 
 ### No Center Align
 ---
+`IMAGEM` NO CENTER EXEMPLO
 ```html
 <ul class="nocenter">
     (...)

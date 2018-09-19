@@ -28,87 +28,88 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/VerticalBarExample.png?raw=true)
 
-```html
-        <ul class="progress-indicator stepped stacked">
-            <li class="completed warning">
-                <a href="#">
-                    <span class="bubble"></span>
-                    <span class="stacked-text">
-                        <span class="fa fa-calendar"></span> June 3rd, 2014
-                        <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
-                    </span>
-                </a>
-            </li>
-            <li class="completed">
-                <span class="bubble"></span>
-                <span class="stacked-text">
-                    <span class="fa fa-calendar"></span> May 21st, 2014
-                    <span class="subdued">/ Some stuff happened. It was amazing.</span>
-                </span>
-            </li>
-            <li>
-                <span class="bubble"></span>
-                <span class="stacked-text">
-                    <span class="fa fa-calendar"></span> April 11th, 2014
-                    <span class="subdued">/ What a wild day!</span>
-                </span>
-            </li>
-            <li>
-                <span class="bubble"></span>
-                <span class="stacked-text">
-                    <span class="fa fa-calendar"></span> February 3rd, 2014
-                    <span class="subdued">/ This day is toooo long.</span>
-                </span>
-            </li>
-            <li>
-                <span class="bubble"></span>
-                <span class="stacked-text">
-                    <span class="fa fa-comment"></span> January 5th, 2014
-                    <span class="subdued">/ Happy birthday, me!</span>
-                </span>
-            </li>
-        </ul>
-        <ul class="progress-indicator stepped stacked">
-            <li class="completed info">
-                <a href="#">
-                    <span class="bubble"></span>
-                    <span class="stacked-text">
-                        <span class="fa fa-calendar"></span> June 3rd, 2014
-                        <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
-                    </span>
-                </a>
-            </li>
-            <li class="completed">
-                <span class="bubble"></span>
-                <span class="stacked-text">
-                    <span class="fa fa-calendar"></span> May 21st, 2014
-                    <span class="subdued">/ Some stuff happened. It was amazing.</span>
-                </span>
-            </li>
-            <li class="completed">
-                <span class="bubble"></span>
-                <span class="stacked-text">
-                    <span class="fa fa-calendar"></span> April 11th, 2014
-                    <span class="subdued">/ What a wild day!</span>
-                </span>
-            </li>
-            <li class="completed">
-                <span class="bubble"></span>
-                <span class="stacked-text">
-                    <span class="fa fa-calendar"></span> February 3rd, 2014
-                    <span class="subdued">/ This day is toooo long.</span>
-                </span>
-            </li>
-            <li>
-                <span class="bubble"></span>
-                <span class="stacked-text">
-                    <span class="fa fa-comment"></span> January 5th, 2014
-                    <span class="subdued">/ Happy birthday, me!</span>
-                </span>
-            </li>
-        </ul>
-```
+<details><summary>Show example code</summary>
 
+```html
+<!-- left bar -->
+<ul class="progress-indicator stepped stacked">
+  <li class="completed warning">
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-calendar"></span> June 3rd, 2014
+      <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
+    </span>
+  </li>
+  <li class="completed">
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-calendar"></span> May 21st, 2014
+      <span class="subdued">/ Some stuff happened. It was amazing.</span>
+    </span>
+  </li>
+  <li>
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-calendar"></span> April 11th, 2014
+      <span class="subdued">/ What a wild day!</span>
+    </span>
+  </li>
+  <li>
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-calendar"></span> February 3rd, 2014
+      <span class="subdued">/ This day is toooo long.</span>
+    </span>
+  </li>
+  <li>
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-comment"></span> January 5th, 2014
+      <span class="subdued">/ Happy birthday, me!</span>
+    </span>
+  </li>
+</ul>
+
+<!-- right bar -->
+<ul class="progress-indicator stepped stacked">
+  <li class="completed info">
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-calendar"></span> June 3rd, 2014
+      <span class="subdued">/ Added a thing. <em>Pssst... I'm a link!</em></span>
+    </span>
+  </li>
+  <li class="completed">
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-calendar"></span> May 21st, 2014
+      <span class="subdued">/ Some stuff happened. It was amazing.</span>
+    </span>
+  </li>
+  <li class="completed">
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-calendar"></span> April 11th, 2014
+      <span class="subdued">/ What a wild day!</span>
+    </span>
+  </li>
+  <li class="completed">
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-calendar"></span> February 3rd, 2014
+      <span class="subdued">/ This day is toooo long.</span>
+    </span>
+  </li>
+  <li>
+    <span class="bubble"></span>
+    <span class="stacked-text">
+      <span class="fa fa-comment"></span> January 5th, 2014
+      <span class="subdued">/ Happy birthday, me!</span>
+    </span>
+  </li>
+</ul>
+```
+</details>
 
 * Vertical Bar Text
     ```html
@@ -119,6 +120,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
             </span>
         </li>
     ```
+		
 * Vertical Bar Subdued Text
     ```html
     <li>
@@ -131,14 +133,56 @@ GITHUB https://github.com/christabor/css-progress-wizard
         </span>
     </li>
     ```
+		
 * Horizontal:
     * Bubble:
     ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleExample.png?raw=true "Bubble")
+		
     ```html
     <ul class="progress-indicator">
         <li> (...) </li>
     </ul>
     ```
+	
+	<details>
+			<summary>Show Bubble Example Code</summary>
+	
+	```html
+		<ul class="progress-indicator">
+			<li class="completed">
+        		<span class="bubble"></span>
+        		green <br>
+        		(completed)
+    		</li>
+    		<li class="active">
+     			<span class="bubble"></span>
+   		     	blue <br>
+		        (active)
+		    </li>
+		    <li class="info">
+		        <span class="bubble"></span>
+		        purple <br>
+ 		       (info)
+ 		   </li>
+ 		   <li class="warning">
+		        <span class="bubble"></span>
+		        yellow <br>
+        		(warning)
+		    </li>
+			<li class="danger">
+				<span class="bubble"></span>
+				red <br>
+				(danger)
+			</li>
+			<li>
+        		<span class="bubble"></span>
+        		gray <br>
+        		no class
+  			</li>
+		</ul>
+	```
+	</details>
+		
 
     * Bar:
     ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarExample.png?raw=true "Bar")
@@ -179,6 +223,45 @@ GITHUB https://github.com/christabor/css-progress-wizard
 * Horizontal Bar Color Example:
     * Bubble:
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BubbleColor.png?raw=true "Horizontal Bubble Color Example")
+<details>
+        <summary>Click me</summary>
+        
+```html
+<ul class="progress-indicator">
+    <li class="completed">
+        <span class="bubble"></span>
+        green <br>
+        (completed)
+    </li>
+    <li class="active">
+        <span class="bubble"></span>
+        blue <br>
+        (active)
+    </li>
+    <li class="info">
+        <span class="bubble"></span>
+        purple <br>
+        (info)
+    </li>
+    <li class="warning">
+        <span class="bubble"></span>
+        yellow <br>
+        (warning)
+    </li>
+    <li class="danger">
+        <span class="bubble"></span>
+        red <br>
+        (danger)
+    </li>
+    <li>
+        <span class="bubble"></span>
+        gray <br>
+        no class
+  </li>
+</ul>
+```
+</details>
+      
     * Bar:
 ![alt text](https://github.com/maico910/css-progress-wizard/blob/maico910-patch-1/screenshots/BarColor.png?raw=true "Horizontal Bar Color Example")
 

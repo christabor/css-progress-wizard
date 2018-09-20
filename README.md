@@ -19,10 +19,10 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ## Table of contents
 
-* [Bar & Progress Format](##bar-&-progress-format-)
+* [Bar & Progress Format](##bar-&-progress-format)
 
-  * [Bar](#bar-)
-  	* [Horizontal Bar](#horizontal-bar-)
+  * [Bar](#bar)
+  	* [Horizontal Bar](#horizontal-bar)
 	* [Bubble](#bubble-)
       * [Bar](#bar-)
     * [Vertical Bar](#vertical-bar-)
@@ -48,7 +48,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 * [Link to Example](#link-to-example-)
 
 
-## Bar & Progress Format [&#x219F;]((#table-of-contents))
+## Bar & Progress Format [&#x219F;](#table-of-contents)
 
 ### Bar[&#x219F;]((#table-of-contents))
 

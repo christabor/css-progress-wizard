@@ -33,7 +33,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 * [Color](#color-)
 
   * [Bubble](#bubble-)
-  * [Bar](#bar-)
+  * [Bar](#bar--)
   * [Vertical Bar](#vertical-bar-)
   * [Color Class](#color-classes-)
 
@@ -305,7 +305,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 ```
 </details>
 
-### Bar [&#x219F;](#table-of-contents)
+### Bar  [&#x219F;](#table-of-contents)
 
 ![BarColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/BarColor.png)
 

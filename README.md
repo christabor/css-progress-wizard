@@ -39,7 +39,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 * [Time Line](#time-line-)
 
-  * [Time & sub-info](#time-&-sub-info-)
+  * [Time and sub-info](#time-&-sub-info-)
 
 * [No Center Align](#no-center-align-)
 
@@ -480,7 +480,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
   </div>
   ```
 
-### Time & sub-info [&#x219F;](#table-of-contents)
+### Time and sub-info [&#x219F;](#table-of-contents)
 
 ```html
 <div> (...)

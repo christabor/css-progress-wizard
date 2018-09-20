@@ -19,17 +19,42 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ## Table of contents
 
-[TOC]
+* [Bar & Progress Format](#bar-&-progress-format-)
+
+  * [Bar](#bar-)
+    * [Horizontal Bar](#horizontal-bar-)
+      * [Bubble](#bubble-)
+      * [Bar](#bar-)
+    * [Vertical Bar](#vertical-bar-)
+      * [Text & Subdued Text](#text-&-subdued-text-)
+  * [Bar Format Class](#bar-format-class-)
+  * [Progress Format Class](#progress-format-class-)
+
+* [Color](#color-)
+
+  * [Bubble](#bubble-)
+  * [Bar](#bar-)
+  * [Vertical Bar](#vertical-bar-)
+  * [Color Class](#color-classes-)
+
+* [Time Line](#time-line-)
+
+  * [Time & sub-info](#time-&-sub-info-)
+
+* [No Center Align](#no-center-align-)
+
+* [Icons](#icons-)
+
+* [Link to Example](#link-to-example-)
 
 
+## Bar & Progress Format [&#x219F;]((#table-of-contents))
 
-## Bar & Progress Format
+### Bar[&#x219F;]((#table-of-contents))
 
-### Bar
+#### Horizontal Bar[]((#table-of-contents))
 
-#### Horizontal Bar
-
-##### Bubble
+##### Bubble[]((#table-of-contents))
 
 ![Bubble](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Bubble.png)
 
@@ -173,7 +198,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 
 
-##### Vertical Bar & Subdued Text
+##### Text & Subdued Text
 
 ![VerticalText](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/VerticalText.png)
 
@@ -217,9 +242,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 
 
-### Bar & Progress Format
-
-#### Bar Format
+### Bar Format Class
 
 |   format   |   class    |
 | :--------: | :--------: |
@@ -235,7 +258,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 
 
-#### Progress Format
+### Progress Format Class
 
 | format |               class               |
 | :----: | :-------------------------------: |
@@ -403,7 +426,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 
 
-### Color Classes
+### Color Class
 
 | progress                                                    | text & icon color                                           | class       |
 | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------- |
@@ -589,167 +612,3 @@ Font Awesome Icons.
 ## Link to Example 
 
 [http://christabor.github.io/css-progress-wizard/](http://christabor.github.io/css-progress-wizard/ "Css Progress Wizard")
-
-
-
-
-
-# bubble
-
-```html
-
-```
-
-
-
-# bar
-
-```html
-<ul class="progress-indicator custom-complex">
-    <li class="completed">
-        <span class="bubble"></span>
-        <i class="fa fa-check-circle"></i>
-        Step 1.
-    </li>
-    <li class="completed">
-        <span class="bubble"></span>
-        <i class="fa fa-check-circle"></i>
-        Step 2.
-    </li>
-    <li>
-        <span class="bubble"></span>
-        Step 3.
-    </li>
-    <li>
-        <span class="bubble"></span>
-        Step 4.
-    </li>
-    <li>
-        <span class="bubble"></span>
-        Step 5.
-    </li>
-</ul>
-```
-
-
-
-# vertical
-
-```html
-
-```
-
-
-
-# vertical text
-
-```html
-<ul class="progress-indicator stepped stacked">
-    <li class="completed warning">
-        <span class="bubble"></span>
-        <span class="stacked-text">
-            I'm stacked-text
-            <span class="subdued">/I'm a subdued text 1</span>
-        </span>
-    </li>
-    <li class="completed">
-        <span class="bubble"></span>
-        <span class="stacked-text">
-            I'm stacked-text 2
-            <span class="subdued">
-                <br>
-                I'm a subdued text with line break</span>
-        </span>
-    </li>
-</ul>
-```
-
-
-
-# bubble + bar color
-
-```html
-
-```
-
-# vertical color
-
-```html
-
-```
-
-
-
-# time line
-
-```html
-<div id="timeline-speaker-example">
-    <h4>How about a speaker timeline?</h4>
-    <ul class="progress-indicator stacked dark">
-        <li class="current-time">
-            <span class="time">I'm time</span>
-            <span class="bubble"></span>
-            <span class="stacked-text">
-                I'm stacked-text
-                <span class="subdued">I'm subdued</span>
-                <span class="sub-info">
-                    <ul>
-                        <li>I'm sub-info</li>
-                        <li>Second sub-info</li>
-                        <li>Last sub-info</li>
-                    </ul>
-                </span>
-            </span>
-        </li>
-        <li>
-            <span class="time">1:30 - 2:30</span>
-            <span class="bubble"></span>
-            <span class="stacked-text">
-                Some really cool title
-                <span class="subdued">By a special speaker</span>
-            </span>
-        </li>
-    </ul>
-</div>
-```
-
-
-
-# no center
-
-```html
-
-```
-
-
-
-# icon code
-
-```html
-<ul class="progress-indicator ">
-    <li class="completed">
-        <span class="bubble"></span>
-        <span class="fa fa-check-circle"></span>
-        check-cicle
-    </li>
-    <li class="active">
-        <span class="bubble"></span>
-        <span class="fa fa-minus"></span>
-        active
-    </li>
-    <li class="info">
-        <span class="bubble"></span>
-        <span class="fa fa-exclamation"></span>
-        exclamation
-    </li>
-    <li class="warning">
-        <span class="bubble"></span><span class="fa fa-calendar"></span>
-        calendar
-    </li>
-    <li class="danger">
-        <span class="bubble"></span><span class="fa fa-comment"></span>
-        comment
-    </li>
-</ul>
-```
-

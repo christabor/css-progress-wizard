@@ -19,33 +19,33 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ## Table of contents
 
-* [Bar & Progress Format](#bar-&-progress-format)
+* [Bar & Progress Format](#bar-&-progress-format-)
 
   * [Bar](#bar-)
-    * [Horizontal Bar](#horizontal-bar)
-      * [Bubble](#bubble)
-      * [Bar](#bar)
-    * [Vertical Bar](#vertical-bar)
-      * [Text & Subdued Text](#text-&-subdued-text)
-  * [Bar Format Class](#bar-format-class)
-  * [Progress Format Class](#progress-format-class)
+    * [Horizontal Bar](#horizontal-bar-)
+      * [Bubble](#bubble-)
+      * [Bar](#bar-)
+    * [Vertical Bar](#vertical-bar-)
+      * [Text & Subdued Text](#text-&-subdued-text-)
+  * [Bar Format Class](#bar-format-class-)
+  * [Progress Format Class](#progress-format-class-)
 
-* [Color](#color)
+* [Color](#color-)
 
-  * [Bubble](#bubble)
-  * [Bar](#bar)
-  * [Vertical Bar](#vertical-bar)
-  * [Color Class](#color-classes)
+  * [Bubble](#bubble-)
+  * [Bar](#bar-)
+  * [Vertical Bar](#vertical-bar-)
+  * [Color Class](#color-classes-)
 
-* [Time Line](#time-line)
+* [Time Line](#time-line-)
 
-  * [Time & sub-info](#time-&-sub-info)
+  * [Time & sub-info](#time-&-sub-info-)
 
-* [No Center Align](#no-center-align)
+* [No Center Align](#no-center-align-)
 
-* [Icons](#icons)
+* [Icons](#icons-)
 
-* [Link to Example](#link-to-example)
+* [Link to Example](#link-to-example-)
 
 
 ## Bar & Progress Format [&#x219F;](#table-of-contents)

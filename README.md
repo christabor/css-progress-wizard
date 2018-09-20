@@ -50,11 +50,11 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ## Bar & Progress Format [&#x219F;](#table-of-contents)
 
-### Bar[&#x219F;](#table-of-contents)
+### Bar [&#x219F;](#table-of-contents)
 
-#### Horizontal Bar[&#x219F;](#table-of-contents)
+#### Horizontal Bar [&#x219F;](#table-of-contents)
 
-##### Bubble[&#x219F;](#table-of-contents)
+##### Bubble [&#x219F;](#table-of-contents)
 
 ![Bubble](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Bubble.png)
 
@@ -92,14 +92,14 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 </details>
 
-How to use
+* How to use:
 
-```html
-<ul class="progress-indicator">
-	<li> (...) </li>
-</ul>	
-```
-
+  ```html
+  <!-- bubble bar -->
+  <ul class="progress-indicator">
+  	<li> (...) </li>
+  </ul>	
+  ```
 
 
 ##### Bar [&#x219F;](#table-of-contents)
@@ -138,13 +138,14 @@ How to use
 
 </details>
 
-How to use
+- How to use
 
-```html
-<ul class="progress-indicator custom-complex">
-    <li> (...) </li>
-</ul>
-```
+  ```html
+  <!--  bar -->
+  <ul class="progress-indicator custom-complex">
+      <li> (...) </li>
+  </ul>
+  ```
 
 
 
@@ -196,14 +197,15 @@ How to use
 
 </details>
 
-How to use
+- How to use:
 
-```html
-<!-- vertical bar -->
-<ul class="stacked">
-	<li>(...)</li>
-</ul>
-```
+  ```html
+  <!-- vertical bar -->
+  <ul class="stacked">
+  	<li>(...)</li>
+  </ul>
+  ```
+
 
 
 
@@ -237,7 +239,7 @@ How to use
 
 </details>
 
-How to use
+How to use [&#x219F;](#table-of-contents)
 
 ```html
 <li>
@@ -252,9 +254,7 @@ How to use
 </li>
 ```
 
-
-
-### Bar Format Class
+### Bar Format Class [&#x219F;](#table-of-contents)
 
 |   format   |   class    |
 | :--------: | :--------: |
@@ -267,8 +267,6 @@ How to use
      <li> (...) </li>
 </ul>
 ```
-
-
 
 ### Progress Format Class
 
@@ -284,17 +282,13 @@ How to use
 </li>
 ```
 
+## Color [&#x219F;](#table-of-contents)
 
-
-## Color
-
-### Bubble
+### Bubble [&#x219F;](#table-of-contents)
 
 ![BubbleColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/BubbleColor.png)
 
 <details><summary>Show this example code</summary>
-
-
 ```html
 <ul class="progress-indicator">
 	<li class="completed">
@@ -329,44 +323,46 @@ How to use
     </li>
 </ul>
 ```
-
 </details>
 
-
-
-### Bar
+### Bar [&#x219F;](#table-of-contents)
 
 ![BarColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/BarColor.png)
 
 <details><summary>Show vertical bar example code</summary
-
 ```html
 <ul class="progress-indicator custom-complex">
+    <!-- green color -->
 	<li class="completed">
         <span class="bubble"></span>
             green<br>
             (completed)
      </li>
+    <!-- blue color -->
     <li class="active">
         <span class="bubble"></span>
             blue<br>
             (active)
     </li>
+    <!-- purple color -->
     <li class="info">
         <span class="bubble"></span>
             purple<br>
             (info)
     </li>
-    	<li class="warning">
+    <!-- yellow color -->
+    <li class="warning">
         <span class="bubble"></span>
             yellow<br>
             (warning)
      </li>
+    <!-- red color -->
     <li class="danger">
         <span class="bubble"></span>
             red<br>
             (danger)
     </li>
+    <!-- gray color -->
     <li>
         <span class="bubble"></span>
             gray<br>
@@ -374,21 +370,17 @@ How to use
     </li>
 </ul>
 ```
-
 </details>
 
-
-
-### Vertical Bar
+### Vertical Bar [&#x219F;](#table-of-contents)
 
 ![VerticalColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/VerticalColor.png)
 
 <details><summary>Show this example code</summary>
-
-
 ```html
 <!-- fisrt bar -->
 <ul class="progress-indicator stepped stacked">
+    <!-- green color -->
 	<li class="completed">
         <span class="bubble"></span>
         <span class="stacked-text">
@@ -396,6 +388,7 @@ How to use
             (completed)
         </span>
      </li>
+    <!-- blue color -->
     <li class="active">
         <span class="bubble"></span>
         <span class="stacked-text">
@@ -403,6 +396,7 @@ How to use
             (active)
         </span>
     </li>
+    <!-- purple color -->
     <li class="info">
         <span class="bubble"></span>
         <span class="stacked-text">
@@ -413,12 +407,14 @@ How to use
 
 <!-- second bar -->
 <ul class="progress-indicator stepped stacked">
+    <!-- yellow color -->
     <li class="warning">
         <span class="bubble"></span>
         <span class="stacked-text">
             yellow<br>
             (warning)</span>
     </li>
+    <!-- red color -->
     <li class="danger">
         <span class="bubble"></span>
         <span class="stacked-tex">
@@ -426,6 +422,7 @@ How to use
             (danger)
         </span>
     </li>
+    <!-- gray color -->
     <li class="">
         <span class="bubble"></span>
         <span class="stacked-text">
@@ -435,12 +432,9 @@ How to use
     </li>
 </ul>
 ```
-
 </details>
 
-
-
-### Color Class
+### Color Class [&#x219F;](#table-of-contents)
 
 | progress                                                    | text & icon color                                           | class       |
 | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------- |
@@ -452,7 +446,7 @@ How to use
 | ![img](https://placehold.it/15/bbb/000000?text=+)     gray  | ![img](https://placehold.it/15/bbb/000000?text=+)     gray  | no class    |
 
 ```html
-<!-- ul class => horizontal or vertical bar -->
+<!-- horizontal or vertical bar -->
 <ul class="(...)">
     <!-- replace x with one of the classes" -->
     <li class="x"> 
@@ -461,16 +455,13 @@ How to use
 </ul>
 ```
 
-
-
-## Time Line
+## Time Line [&#x219F;](#table-of-contents)
 
 ![Time Line](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/TimeLine.png)
 
 <details><summary>Show this example code</summary>
-
-
 ```html
+<!-- class for time line -->
 <div id="timeline-speaker-example">
     <h4>How about a speaker timeline?</h4>
     <ul class="progress-indicator stacked dark">
@@ -500,18 +491,17 @@ How to use
     </ul>
 </div>
 ```
-
 </details>
 
-```html
-<div id="timeline-speaker-example">
-    (...)
-</div>
-```
+- How to use:
 
+  ```html
+  <div id="timeline-speaker-example">
+      (...)
+  </div>
+  ```
 
-
-### Time & sub-info
+### Time & sub-info [&#x219F;](#table-of-contents)
 
 ```html
 <div> (...)
@@ -529,17 +519,13 @@ How to use
 </div>
 ```
 
-
-
-## No Center Align
+## No Center Align [&#x219F;](#table-of-contents)
 
 ![NoCenter](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/NoCenter.png)
 
 <details><summary>Show this example code</summary>
-
-
 ```html
-<h3>No centering in the container</h3>
+<!-- class for no center align -->
 <ul class="progress-indicator nocenter stacked">
     <li class="completed info">
         <span class="bubble"></span>
@@ -555,59 +541,58 @@ How to use
     </li>
 </ul>
 ```
-
 </details>
 
-How to use:
+- How to use:
 
-```html
-<ul class="nocenter">
-	(...)
-</ul>
-```
+  ```html
+  <ul class="nocenter">
+  	(...)
+  </ul>
+  ```
 
-
-
-## Icons
+## Icons [&#x219F;](#table-of-contents)
 
 Font Awesome Icons.
 
 ![Icons](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Icons.png)
 
 <details><summary>Show this example code</summary>
-
-
 ```html
 <ul class="progress-indicator ">
     <li class="completed">
         <span class="bubble"></span>
+        <!-- check-circle icon  -->
         <span class="fa fa-check-circle"></span>
         check-cicle
     </li>
     <li class="active">
         <span class="bubble"></span>
+        <!-- minus icon -->
         <span class="fa fa-minus"></span>
         active
     </li>
     <li class="info">
         <span class="bubble"></span>
+        <!-- exclamation icon  -->
         <span class="fa fa-exclamation"></span>
         exclamation
     </li>
     <li class="warning">
-        <span class="bubble"></span><span class="fa fa-calendar"></span>
+        <span class="bubble"></span>
+        <!-- calendar icon -->
+        <span class="fa fa-calendar"></span>
         calendar
     </li>
     <li class="danger">
-        <span class="bubble"></span><span class="fa fa-comment"></span>
+        <span class="bubble"></span>
+        <!-- comment icon -->
+        <span class="fa fa-comment"></span>
         comment
     </li>
 </ul>
 ```
-
 </details>
-
-
 
 | class        | image                                                        |
 | ------------ | ------------------------------------------------------------ |
@@ -626,8 +611,6 @@ Font Awesome Icons.
 </ul>
 ```
 
-
-
-## Link to Example 
+## Link to Example [&#x219F;](#table-of-contents)
 
 [http://christabor.github.io/css-progress-wizard/](http://christabor.github.io/css-progress-wizard/ "Css Progress Wizard")

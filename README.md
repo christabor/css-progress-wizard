@@ -19,46 +19,47 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ## Table of contents
 
-* [Bar & Progress Format](##bar-&-progress-format)
+* [Bar & Progress Format](#bar-&-progress-format)
 
   * [Bar](#bar)
-  	* [Horizontal Bar](#horizontal-bar)
-	* [Bubble](#bubble-)
-      * [Bar](#bar-)
-    * [Vertical Bar](#vertical-bar-)
-      * [Text & Subdued Text](#text-&-subdued-text-)
-  * [Bar Format Class](#bar-format-class-)
-  * [Progress Format Class](#progress-format-class-)
+    * [Horizontal Bar](#horizontal-bar)
+      * [Bubble](#bubble)
+      * [Bar](#bar)
+    * [Vertical Bar](#vertical-bar)
+      * [Text & Subdued Text](#text-&-subdued-text)
+  * [Bar Format Class](#bar-format-class)
+  * [Progress Format Class](#progress-format-class)
 
-* [Color](#color-)
+* [Color](#color)
 
-  * [Bubble](#bubble-)
-  * [Bar](#bar-)
-  * [Vertical Bar](#vertical-bar-)
-  * [Color Class](#color-classes-)
+  * [Bubble](#bubble)
+  * [Bar](#bar)
+  * [Vertical Bar](#vertical-bar)
+  * [Color Class](#color-classes)
 
-* [Time Line](#time-line-)
+* [Time Line](#time-line)
 
-  * [Time & sub-info](#time-&-sub-info-)
+  * [Time & sub-info](#time-&-sub-info)
 
-* [No Center Align](#no-center-align-)
+* [No Center Align](#no-center-align)
 
-* [Icons](#icons-)
+* [Icons](#icons)
 
-* [Link to Example](#link-to-example-)
+* [Link to Example](#link-to-example)
 
 
 ## Bar & Progress Format [&#x219F;](#table-of-contents)
 
-### Bar[&#x219F;]((#table-of-contents))
+### Bar[&#x219F;](#table-of-contents)
 
-#### Horizontal Bar[]((#table-of-contents))
+#### Horizontal Bar[&#x219F;](#table-of-contents)
 
-##### Bubble[]((#table-of-contents))
+##### Bubble[&#x219F;](#table-of-contents)
 
 ![Bubble](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Bubble.png)
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show this example code</summary>
+
 
 ```html
 <ul class="progress-indicator">
@@ -91,6 +92,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 </details>
 
+How to use
+
 ```html
 <ul class="progress-indicator">
 	<li> (...) </li>
@@ -99,11 +102,12 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 
 
-##### Bar
+##### Bar [&#x219F;](#table-of-contents)
 
 ![Bar](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Bar.png)
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show this example code</summary>
+
 
 ```html
 <ul class="progress-indicator custom-complex">
@@ -133,6 +137,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 ```
 
 </details>
+
+How to use
 
 ```html
 <ul class="progress-indicator custom-complex">
@@ -146,7 +152,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ​	![Vertical](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Vertical.png) 
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show this example code</summary>
+
 
 ```html
 <!-- first bar -->
@@ -189,6 +196,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 </details>
 
+How to use
+
 ```html
 <!-- vertical bar -->
 <ul class="stacked">
@@ -202,7 +211,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ![VerticalText](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/VerticalText.png)
 
-<details><summary>Click me </summary>
+<details><summary>Show this example code</summary>
+
 
 ```HTML
 <ul class="progress-indicator stepped stacked">
@@ -226,6 +236,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 ```
 
 </details>
+
+How to use
 
 ```html
 <li>
@@ -280,7 +292,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ![BubbleColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/BubbleColor.png)
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show this example code</summary>
+
 
 ```html
 <ul class="progress-indicator">
@@ -325,9 +338,9 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ![BarColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/BarColor.png)
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show vertical bar example code</summary
 
-```
+```html
 <ul class="progress-indicator custom-complex">
 	<li class="completed">
         <span class="bubble"></span>
@@ -370,7 +383,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ![VerticalColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/VerticalColor.png)
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show this example code</summary>
+
 
 ```html
 <!-- fisrt bar -->
@@ -453,7 +467,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ![Time Line](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/TimeLine.png)
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show this example code</summary>
+
 
 ```html
 <div id="timeline-speaker-example">
@@ -520,7 +535,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ![NoCenter](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/NoCenter.png)
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show this example code</summary>
+
 
 ```html
 <h3>No centering in the container</h3>
@@ -542,6 +558,8 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 </details>
 
+How to use:
+
 ```html
 <ul class="nocenter">
 	(...)
@@ -556,7 +574,8 @@ Font Awesome Icons.
 
 ![Icons](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Icons.png)
 
-<details><summary>Show vertical bar example code</summary>
+<details><summary>Show this example code</summary>
+
 
 ```html
 <ul class="progress-indicator ">

@@ -534,6 +534,7 @@ Font Awesome Icons.
 ![Icons](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Icons.png)
 
 <details><summary>Show this example code</summary>
+	
 ```html
 <ul class="progress-indicator ">
     <li class="completed">
@@ -568,6 +569,7 @@ Font Awesome Icons.
     </li>
 </ul>
 ```
+
 </details>
 
 | class        | image                                                        |

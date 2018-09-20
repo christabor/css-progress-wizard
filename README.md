@@ -89,26 +89,21 @@ GITHUB https://github.com/christabor/css-progress-wizard
     </li>
 </ul>
 ```
-
 </details>
 
 * How to use:
-
   ```html
   <!-- bubble bar -->
   <ul class="progress-indicator">
   	<li> (...) </li>
   </ul>	
   ```
-
-
+  
 ##### Bar [&#x219F;](#table-of-contents)
 
 ![Bar](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Bar.png)
 
 <details><summary>Show this example code</summary>
-
-
 ```html
 <ul class="progress-indicator custom-complex">
     <li class="completed">
@@ -135,11 +130,9 @@ GITHUB https://github.com/christabor/css-progress-wizard
     </li>
 </ul>
 ```
-
 </details>
 
-- How to use
-
+* How to use:
   ```html
   <!--  bar -->
   <ul class="progress-indicator custom-complex">
@@ -147,15 +140,11 @@ GITHUB https://github.com/christabor/css-progress-wizard
   </ul>
   ```
 
+#### Vertical Bar [&#x219F;](#table-of-contents)
 
-
-#### Vertical Bar
-
-​	![Vertical](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Vertical.png) 
+![Vertical](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Vertical.png) 
 
 <details><summary>Show this example code</summary>
-
-
 ```html
 <!-- first bar -->
 <ul class="progress-indicator stepped stacked">
@@ -194,11 +183,9 @@ GITHUB https://github.com/christabor/css-progress-wizard
     </li>
 </ul>
 ```
-
 </details>
 
-- How to use:
-
+* How to use:
   ```html
   <!-- vertical bar -->
   <ul class="stacked">
@@ -206,16 +193,11 @@ GITHUB https://github.com/christabor/css-progress-wizard
   </ul>
   ```
 
-
-
-
-##### Text & Subdued Text
+##### Text & Subdued Text [&#x219F;](#table-of-contents)
 
 ![VerticalText](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/VerticalText.png)
 
 <details><summary>Show this example code</summary>
-
-
 ```HTML
 <ul class="progress-indicator stepped stacked">
     <li class="completed warning">
@@ -236,23 +218,21 @@ GITHUB https://github.com/christabor/css-progress-wizard
     </li>
 </ul>
 ```
-
 </details>
 
-How to use [&#x219F;](#table-of-contents)
-
-```html
-<li>
-    <span class="stacked-text">
-        <!-- put here text -->
-        I'm stacked-text 1
-        <span class="subdued">
-            <!-- put here subdued text  -->
-            /I'm a subdued text 1 		
+* How to use:
+    ```html
+    <li>
+        <span class="stacked-text">
+            <!-- put here text -->
+            I'm stacked-text 1
+            <span class="subdued">
+                <!-- put here subdued text  -->
+                /I'm a subdued text 1 		
+            </span>
         </span>
-    </span>
-</li>
-```
+    </li>
+    ```
 
 ### Bar Format Class [&#x219F;](#table-of-contents)
 
@@ -268,7 +248,7 @@ How to use [&#x219F;](#table-of-contents)
 </ul>
 ```
 
-### Progress Format Class
+### Progress Format Class [&#x219F;](#table-of-contents)
 
 | format |               class               |
 | :----: | :-------------------------------: |
@@ -493,8 +473,7 @@ How to use [&#x219F;](#table-of-contents)
 ```
 </details>
 
-- How to use:
-
+* How to use:
   ```html
   <div id="timeline-speaker-example">
       (...)
@@ -543,8 +522,7 @@ How to use [&#x219F;](#table-of-contents)
 ```
 </details>
 
-- How to use:
-
+* How to use:
   ```html
   <ul class="nocenter">
   	(...)

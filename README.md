@@ -33,7 +33,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
   * [Bubble](#bubble--)
   * [Bar](#bar--)
   * [Vertical Bar](#vertical-bar--)
-  * [Color Class](#color-classes-)
+  * [Color Class](#color-class-)
 
 * [Time Line](#time-line-)
 

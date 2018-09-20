@@ -19,22 +19,20 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ## Table of contents
 
-* [Bar & Progress Format](#bar-and-progress-format-)
-
+* [Bar and Progress Format](#bar-and-progress-format-)
   * [Bar](#bar-)
     * [Horizontal Bar](#horizontal-bar-)
       * [Bubble](#bubble-)
       * [Bar](#bar-)
     * [Vertical Bar](#vertical-bar-)
-      * [Text & Subdued Text](#text-&-subdued-text-)
+      * [Text and Subdued Text](#text-and-subdued-text-)
   * [Bar Format Class](#bar-format-class-)
   * [Progress Format Class](#progress-format-class-)
 
 * [Color](#color-)
-
-  * [Bubble](#bubble-)
+  * [Bubble](#bubble--)
   * [Bar](#bar--)
-  * [Vertical Bar](#vertical-bar-)
+  * [Vertical Bar](#vertical-bar--)
   * [Color Class](#color-classes-)
 
 * [Time Line](#time-line-)
@@ -48,7 +46,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 * [Link to Example](#link-to-example-)
 
 
-## Bar & Progress Format [&#x219F;](#table-of-contents)
+## Bar and Progress Format [&#x219F;](#table-of-contents)
 
 ### Bar [&#x219F;](#table-of-contents)
 
@@ -98,7 +96,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
   	<li> (...) </li>
   </ul>	
   ```
-  
+
 ##### Bar [&#x219F;](#table-of-contents)
 
 ![Bar](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/Bar.png)
@@ -191,7 +189,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
   <ul class="stacked">
   	<li>(...)</li>
   </ul>
-  ```
+```
 
 ##### Text & Subdued Text [&#x219F;](#table-of-contents)
 
@@ -264,7 +262,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ## Color [&#x219F;](#table-of-contents)
 
-### Bubble [&#x219F;](#table-of-contents)
+### Bubble  [&#x219F;](#table-of-contents)
 
 ![BubbleColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/BubbleColor.png)
 
@@ -352,7 +350,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 ```
 </details>
 
-### Vertical Bar [&#x219F;](#table-of-contents)
+### Vertical Bar  [&#x219F;](#table-of-contents)
 
 ![VerticalColor](/home/michael910/Documents/Bibliotecas/Barra de Etapas/FlexProgressBar/screenshots/VerticalColor.png)
 
@@ -425,7 +423,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 | ![img](https://placehold.it/15/d3140f/000000?text=+)  red   | ![img](https://placehold.it/15/bbb/000000?text=+)     gray  | `danger`    |
 | ![img](https://placehold.it/15/bbb/000000?text=+)     gray  | ![img](https://placehold.it/15/bbb/000000?text=+)     gray  | no class    |
 
-```html
+​```html
 <!-- horizontal or vertical bar -->
 <ul class="(...)">
     <!-- replace x with one of the classes" -->

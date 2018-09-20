@@ -19,7 +19,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ## Table of contents
 
-* [Bar & Progress Format](#bar-&#x0026-progress-format-)
+* [Bar & Progress Format](#bar-&-progress-format-)
 
   * [Bar](#bar-)
     * [Horizontal Bar](#horizontal-bar-)

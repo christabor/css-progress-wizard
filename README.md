@@ -52,7 +52,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
 
 ### Bar [&#x219F;](#table-of-contents)
 
-#### Horizontal Bar[&#x219F;](#table-of-contents)
+#### Horizontal Bar [&#x219F;](#table-of-contents)
 
 ##### Bubble [&#x219F;](#table-of-contents)
 

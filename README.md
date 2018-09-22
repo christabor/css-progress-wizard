@@ -4,6 +4,8 @@
 
 GITHUB https://github.com/christabor/css-progress-wizard
 
+DEMO http://christabor.github.io/css-progress-wizard/
+
 # A pure css progress indicator!
 
 - Pure CSS (lightweight, easy to implement)
@@ -42,8 +44,6 @@ GITHUB https://github.com/christabor/css-progress-wizard
 * [No Center Align](#no-center-align-)
 
 * [Icons](#icons-)
-
-* [Link to Example](#link-to-example-)
 
 
 ## Bar and Progress Format [&#x219F;](#table-of-contents)
@@ -195,7 +195,7 @@ GITHUB https://github.com/christabor/css-progress-wizard
   </ul>
   ```
 
-##### Text & Subdued Text [&#x219F;](#table-of-contents)
+##### Text and Subdued Text [&#x219F;](#table-of-contents)
 
 ![VerticalText](https://raw.githubusercontent.com/maico910/css-progress-wizard/maico910-patch-1/screenshots/VerticalText.png)
 
@@ -601,7 +601,3 @@ Font Awesome Icons.
     </li>
 </ul>
 ```
-
-## Link to Example [&#x219F;](#table-of-contents)
-
-[http://christabor.github.io/css-progress-wizard/](http://christabor.github.io/css-progress-wizard/ "Css Progress Wizard")

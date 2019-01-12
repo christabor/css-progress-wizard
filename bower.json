@@ -2,7 +2,7 @@
   "name": "css-progress-wizard",
   "description": "A pure CSS step progress indicator",
   "main": "css/progress-wizard.min.css",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "keywords": [
     "css",
     "step",

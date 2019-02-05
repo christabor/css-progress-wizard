@@ -1,35 +1,34 @@
 /* Copyright 2013-2015 etc Chris Tabor. See https://github.com/christabor/css-progress-wizard/blob/master/LICENSE for details. */
 
-// colors
+// Colors
+$pw-incomplete: #bbb !default;
+$pw-complete: #65d074 !default;
+$pw-active: #337AB7 !default;
+$pw-hover: #5671d0 !default;
+$pw-step-danger: #d3140f !default;
+$pw-step-warning: #edb10a !default;
+$pw-step-info: #5b32d6 !default;
 
-$incomplete: #bbb !default;
-$complete: #65d074 !default;
-$active: #337AB7 !default;
-$hover: #5671d0 !default;
-$step-danger: #d3140f !default;
-$step-warning: #edb10a !default;
-$step-info: #5b32d6 !default;
+// Sizing
+$pw-bubble-size: 20px !default;
+$pw-bubble-line-thickness: 3px !default;
+$pw-border-thickness: 1px !default;
+$pw-darken-amount: 30% !default;
 
-// sizing
-
-$bubble-size: 20px !default;
-$bubble-line-thickness: 3px !default;
-$border-thickness: 1px !default;
-$darken-amount: 30% !default;
-
-// misc
-$mobile-size: 400px !default;
+// Mobile
+$pw-mobile-size: 400px !default;
 
 @mixin bubble-style($color) {
     background-color: $color;
     color: $color;
-    border-color: darken($color, $darken-amount);
+    border-color: darken($color, $pw-darken-amount);
     &:before,
     &:after {
         background-color: $color;
-        border-color: darken($color, $darken-amount);
+        border-color: darken($color, $pw-darken-amount);
     }
 }
+
 .flexer {
     display: -webkit-box;
     display: -moz-box;
@@ -68,20 +67,20 @@ $mobile-size: 400px !default;
         margin: 0;
         position: relative;
         text-overflow: ellipsis;
-        color: $incomplete;
+        color: $pw-incomplete;
         display: block;
         &:hover {
-            color: darken($incomplete, $darken-amount);
+            color: darken($pw-incomplete, $pw-darken-amount);
         }
     }
     > li .bubble {
         border-radius: 1000px;
-        width: $bubble-size;
-        height: $bubble-size;
-        background-color: $incomplete;
+        width: $pw-bubble-size;
+        height: $pw-bubble-size;
+        background-color: $pw-incomplete;
         display: block;
         margin: 0 auto 0.5em auto;
-        border-bottom: $border-thickness solid darken($incomplete, 20%);
+        border-bottom: $pw-border-thickness solid darken($pw-incomplete, 20%);
     }
 
     // line connectors
@@ -90,11 +89,11 @@ $mobile-size: 400px !default;
     > li .bubble:after {
         display: block;
         position: absolute;
-        top: $bubble-size / 2 - $border-thickness;
+        top: $pw-bubble-size / 2 - $pw-border-thickness;
         width: 100%;
-        height: $bubble-line-thickness;
+        height: $pw-bubble-line-thickness;
         content: '';
-        background-color: $incomplete;
+        background-color: $pw-incomplete;
     }
     > li .bubble:before {
         left: 0;
@@ -119,37 +118,37 @@ $mobile-size: 400px !default;
     // completed state
 
     > li.completed {
-        color: $complete;
+        color: $pw-complete;
         .bubble {
-            @include bubble-style($complete);
+            @include bubble-style($pw-complete);
         }
     }
 
     // current state
 
     > li.active {
-        color: $active;
+        color: $pw-active;
         .bubble {
-            @include bubble-style($active);
+            @include bubble-style($pw-active);
         }
     }
 
     // button states
 
     > li a:hover .bubble {
-        @include bubble-style($hover);
+        @include bubble-style($pw-hover);
     }
 
     // override states
 
     > li.danger .bubble {
-        @include bubble-style($step-danger);
+        @include bubble-style($pw-step-danger);
     }
     > li.warning .bubble {
-        @include bubble-style($step-warning);
+        @include bubble-style($pw-step-warning);
     }
     > li.info .bubble {
-        @include bubble-style($step-info);
+        @include bubble-style($pw-step-info);
     }
 
     // stacked version
@@ -164,8 +163,8 @@ $mobile-size: 400px !default;
         > li .bubble:before,
         > li .bubble:after {
             left: 50%;
-            margin-left: -$bubble-line-thickness / 2;
-            width: $bubble-line-thickness;
+            margin-left: -$pw-bubble-line-thickness / 2;
+            width: $pw-bubble-line-thickness;
             height: 100%;
         }
         .stacked-text {
@@ -189,17 +188,17 @@ $mobile-size: 400px !default;
         }
         > li .bubble:before,
         > li .bubble:after {
-            left: $bubble-size / 2;
+            left: $pw-bubble-size / 2;
         }
         .stacked-text {
             width: auto !important;
             display: block;
-            margin-left: $bubble-size * 2 !important;
+            margin-left: $pw-bubble-size * 2 !important;
         }
     }
 }
 
-@media handheld, screen and (max-width: $mobile-size) {
+@media handheld, screen and (max-width: $pw-mobile-size) {
     .progress-indicator {
         font-size: 60%;
     }

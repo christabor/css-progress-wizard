@@ -89,7 +89,7 @@ $pw-mobile-size: 400px !default;
     > li .bubble:after {
         display: block;
         position: absolute;
-        top: $pw-bubble-size / 2 - $pw-border-thickness;
+        top: calc($pw-bubble-size / 2) - $pw-border-thickness;
         width: 100%;
         height: $pw-bubble-line-thickness;
         content: '';
@@ -163,7 +163,7 @@ $pw-mobile-size: 400px !default;
         > li .bubble:before,
         > li .bubble:after {
             left: 50%;
-            margin-left: -$pw-bubble-line-thickness / 2;
+            margin-left: calc(-1 * $pw-bubble-line-thickness / 2);
             width: $pw-bubble-line-thickness;
             height: 100%;
         }
@@ -188,7 +188,7 @@ $pw-mobile-size: 400px !default;
         }
         > li .bubble:before,
         > li .bubble:after {
-            left: $pw-bubble-size / 2;
+            left: calc($pw-bubble-size / 2);
         }
         .stacked-text {
             width: auto !important;

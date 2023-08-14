@@ -1,16 +1,23 @@
 'use strict';
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const rename = require('gulp-rename');
+const cleanCSS = require('gulp-clean-css');
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var minifyCss = require('gulp-minify-css');
-
-gulp.task('sass', function () {
-    gulp.src('sass/*.scss')
+gulp.task('sass', function() {
+  return gulp.src('sass/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('progress-wizard.min.css'))
-    .pipe(minifyCss())
-    .pipe(gulp.dest('css/'));
+    .pipe(gulp.dest('css'))
+    .pipe(cleanCSS())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass']);
+gulp.task('watch', function() {
+  gulp.watch('sass/*.scss', gulp.series('sass'));
+});
+
+gulp.task('default', gulp.series('sass', 'watch'));
+
+
+

@@ -7,3 +7,9 @@
 * Resizeable/responsive (text-resize, etc... try it!)
 * Easy to customize design (sass mixins/variables, etc...)
 * Written with SASS
+
+## How to development
+
+```
+npm install && gulp
+```
